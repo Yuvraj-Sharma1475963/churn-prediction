@@ -2,6 +2,8 @@
 
 Predicts which telecom customers are likely to cancel, explains **why** for each customer with SHAP, and chooses the decision threshold from business cost instead of accuracy. Includes a Streamlit app that scores a single customer and shows the reasons behind the score.
 
+**Live app:** https://yuvraj-churn-prediction.streamlit.app
+
 **Stack:** Python · pandas · scikit-learn · XGBoost · SHAP · Streamlit
 
 ## The problem
@@ -37,6 +39,8 @@ Test set of 1,409 customers (374 churners), stratified 80/20 split.
 - **SHAP's top drivers** (contract, tenure, monthly charges) match what the exploratory analysis suggested.
 
 ## The app
+
+[Try it live](https://yuvraj-churn-prediction.streamlit.app), deployed on Streamlit Community Cloud. If the app has been asleep, click the button to wake it; it takes about 30 seconds.
 
 Enter a customer's details to get a churn risk score, a HIGH/LOW decision at the 0.30 threshold, and a SHAP breakdown of what's pushing the score up or down.
 
